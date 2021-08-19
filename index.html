@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Iron Madeleine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn"><i class='fas fa-hand-pointer'></i></button>
+
+    <h1>IRON MADELEINES</h1>
+    
+    <div class="container">
+        <img src="iron-madeleine.png" alt="eddie">
+        <ul>
+            <li>100g de farine de riz</li>
+            <li>30g de poudre d'amande</li>
+            <li>2 oeufs</li>
+            <li>60g d'huile d'olive</li>
+            <li>130g de concentré de tomates</li>
+            <li>2 c.à s. d'oignons frits</li>
+            <li>1/2 c.à c. de pâte de piment fort</li>
+            <li>1 c.à c. de poudre à lever</li>
+            <li>1/2 c. à c de bicarbonate</li>
+            <li>1 pincée de sel</li>
+        </ul>
+    </div>
+
+    <ol>
+        <li>Dans un cul de poule, mélanger les ingrédients humides: oeufs, huile d'olive, concentré de tomates et pâte de piment.</li>
+        <li>Tamiser la farine de riz, la poudre à lever et le bicarbonate de soude dans le mélange. Pour finir, ajouter la poudre d'amande, 1 pincée de sel el les oignons frits. Bien mélanger le tout.</li>
+        <li>Réserver la pâte au frais: idéalement toute la nuit, sinon 2 à 3 heures suffiront.</li>
+        <li>Préchauffer le four à 220°C (th.7)</li>
+        <li>Remplir les moules aux 3/4, et enfourner les madeleines 5 mn à 220°C, le temps que la bosse se forme, puis 5 à 8 mn à 120°C (th.4). </li>
+    </ol>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nutriments</th>
+                <th>Quantité</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Energie</td>
+                <td>1882 KJ / 449 Kcal</td>
+            </tr>
+            <tr>
+                <td>Matières grasses</td>
+                <td>20 g</td>
+            </tr>
+            <tr>
+                <td>dont acides saturés</td>
+                <td>2.2 g</td>
+            </tr>
+            <tr>
+                <td>Glucides</td>
+                <td>60 g</td>
+            </tr>
+            <tr>
+                <td>dont sucres</td>
+                <td>35 g</td>
+            </tr>
+            <tr>
+                <td>Fibres</td>
+                <td>1.1 g</td>
+            </tr>
+            <tr>
+                <td>Protéines</td>
+                <td>5.6 g</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Up The Irons !</h3>
+    
+    <form>
+        <label for="recipeName">Your recipe:</label>
+        <input type="text" name="recipeName" id="recipeName" placeholder="Your recipe">
+        <label for="instructions">Waiting for your instructions:</label>
+        <textarea name="instructions" id="instructions" cols="30" rows="10" placeholder="your instructions"></textarea>
+        <input type="button" class="btn" value="Send">
+    </form>
+
+    <footer>
+        <h3>Marie &COPY; 2021</h3>
+    </footer>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+</body>
+</html>
